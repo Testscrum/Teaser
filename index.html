@@ -3,128 +3,131 @@ import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, Cart
 
 const FarmskyLandscapeDeck = () => {
   const financialData = [
-    { name: 'Q1', revenue: 0.6, costs: 0.3 },
-    { name: 'Q2', revenue: 1.2, costs: 0.6 },
-    { name: 'Q3', revenue: 1.8, costs: 0.9 },
-    { name: 'Q4', revenue: 2.5, costs: 1.2 }
+    { name: 'Current', revenue: 0.117, costs: 0.05 },
+    { name: 'Q2', revenue: 0.5, costs: 0.2 },
+    { name: 'Q3', revenue: 1.2, costs: 0.4 },
+    { name: 'Q4', revenue: 2.0, costs: 0.7 }
   ];
 
   const marketData = [
-    { name: 'Current Market', value: 65 },
-    { name: 'Growth Potential', value: 35 }
+    { name: 'Initial Market', value: 75 },
+    { name: 'Growth Potential', value: 2425 }
   ];
 
-  const COLORS = ['#047857', '#059669', '#10B981', '#34D399'];
+  const COLORS = ['#0A5F2C', '#147A3B', '#1B964A', '#22B159'];
 
   return (
-    <div className="bg-white p-6" style={{ height: '768px', width: '1024px' }}>
-      {/* Header Bar */}
-      <div className="flex justify-between items-center mb-6 border-b border-green-800 pb-4">
+    <div className="bg-white p-4" style={{ height: '768px', width: '1024px' }}>
+      {/* Header Bar - Reduced padding */}
+      <div className="flex justify-between items-center mb-4 border-b border-green-900 pb-2">
         <div>
-          <h1 className="text-4xl font-bold text-green-800">Farmsky</h1>
-          <p className="text-xl text-gray-600">AgriTech Investment Platform</p>
+          <h1 className="text-3xl font-bold text-green-900">Farmsky</h1>
+          <p className="text-lg text-gray-600">Fractional Lending Platform - Connecting Farmers to Investors</p>
         </div>
         <div className="text-right">
-          <p className="text-green-800 font-bold">Investment Teaser 2024</p>
-          <p className="text-sm text-gray-600">invest@farmsky.com</p>
+          <p className="text-green-900 font-bold">Pre-Seed Investment Proposal 2024</p>
+          <p className="text-sm text-gray-600">contact@farmsky.com</p>
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6 h-full">
-        {/* Left Column - Problem, Solution, and Metrics */}
-        <div className="space-y-4">
+      <div className="grid grid-cols-3 gap-4 h-full">
+        {/* Left Column - Reduced spacing */}
+        <div className="space-y-3">
           {/* Problem & Solution Section */}
-          <div className="grid grid-cols-2 gap-4 mb-4">
-            <div className="bg-green-50 p-3 rounded-lg">
-              <h2 className="text-lg font-bold text-green-800 mb-2">The Problem</h2>
+          <div className="grid grid-cols-2 gap-3">
+            <div className="bg-green-50 p-2 rounded-lg">
+              <h2 className="text-base font-bold text-green-900 mb-1">Market Challenges</h2>
               <ul className="text-sm space-y-1">
                 <li className="flex items-start">
-                  <span className="text-green-700 mr-2">•</span>
-                  $65B+ funding gap
+                  <span className="text-green-800 mr-2">•</span>
+                  22% NPL Rate
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-700 mr-2">•</span>
-                  Limited capital access
+                  <span className="text-green-800 mr-2">•</span>
+                  37% Credit Misappropriation
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-700 mr-2">•</span>
-                  Low investment returns
+                  <span className="text-green-800 mr-2">•</span>
+                  50% Yield Loss Risk
                 </li>
               </ul>
             </div>
-            <div className="bg-green-50 p-3 rounded-lg">
-              <h2 className="text-lg font-bold text-green-800 mb-2">Our Solution</h2>
+            <div className="bg-green-50 p-2 rounded-lg">
+              <h2 className="text-base font-bold text-green-900 mb-1">Our Solution</h2>
               <ul className="text-sm space-y-1">
                 <li className="flex items-start">
-                  <span className="text-green-700 mr-2">•</span>
-                  Digital platform
+                  <span className="text-green-800 mr-2">•</span>
+                  Farm ERP System
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-700 mr-2">•</span>
-                  Risk assessment tech
+                  <span className="text-green-800 mr-2">•</span>
+                  Risk Assessment Tools
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-700 mr-2">•</span>
-                  Sustainable investing
+                  <span className="text-green-800 mr-2">•</span>
+                  Investor-Farmer Matching
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Key Metrics Grid */}
-          <div className="bg-white border border-gray-200 p-4 rounded-lg">
-            <h2 className="text-lg font-bold text-green-800 mb-3">Key Metrics</h2>
-            <div className="grid grid-cols-2 gap-4">
+          {/* Current Traction */}
+          <div className="bg-white border border-gray-200 p-3 rounded-lg">
+            <h2 className="text-base font-bold text-green-900 mb-2">Current Traction</h2>
+            <div className="grid grid-cols-2 gap-3">
               <div className="text-center bg-green-50 p-2 rounded">
-                <p className="text-2xl font-bold text-green-700">50K+</p>
-                <p className="text-xs text-gray-600">Farmers Supported</p>
+                <p className="text-xl font-bold text-green-800">$117K+</p>
+                <p className="text-xs text-gray-600">Funds Facilitated</p>
               </div>
               <div className="text-center bg-green-50 p-2 rounded">
-                <p className="text-2xl font-bold text-green-700">60%</p>
-                <p className="text-xs text-gray-600">Cost Reduction</p>
+                <p className="text-xl font-bold text-green-800">$259K</p>
+                <p className="text-xs text-gray-600">Farm Revenue</p>
               </div>
               <div className="text-center bg-green-50 p-2 rounded">
-                <p className="text-2xl font-bold text-green-700">24%</p>
-                <p className="text-xs text-gray-600">Average ROI</p>
+                <p className="text-xl font-bold text-green-800">20</p>
+                <p className="text-xs text-gray-600">Monthly Applications</p>
               </div>
               <div className="text-center bg-green-50 p-2 rounded">
-                <p className="text-2xl font-bold text-green-700">$68K+</p>
-                <p className="text-xs text-gray-600">Total Investment</p>
+                <p className="text-xl font-bold text-green-800">30+</p>
+                <p className="text-xs text-gray-600">Active Investors</p>
               </div>
             </div>
           </div>
 
           {/* Team Section */}
-          <div className="bg-green-50 p-4 rounded-lg">
-            <h2 className="text-lg font-bold text-green-800 mb-2">Team Expertise</h2>
-            <ul className="text-sm space-y-1">
-              <li className="flex items-start">
-                <span className="text-green-700 mr-2">•</span>
-                Leadership from fintech & agriculture
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-700 mr-2">•</span>
-                Risk management expertise
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-700 mr-2">•</span>
-                30+ years combined experience
-              </li>
-            </ul>
+          <div className="bg-green-50 p-3 rounded-lg">
+            <h2 className="text-base font-bold text-green-900 mb-2">Leadership Team</h2>
+            <div className="text-sm space-y-2">
+              <div>
+                <div className="font-bold">Bonface Nyalwal</div>
+                <p className="text-gray-600">CEO</p>
+                <p className="text-xs">8 years startup experience, Afriagrimark founder</p>
+              </div>
+              <div>
+                <div className="font-bold">Winnie Gathigia</div>
+                <p className="text-gray-600">COO</p>
+                <p className="text-xs">16 years management experience, MBA</p>
+              </div>
+              <div>
+                <div className="font-bold">Nabil Janmohamed</div>
+                <p className="text-gray-600">Advisor</p>
+                <p className="text-xs">VP Field Operations at Pula</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Center Column - Market & Financial Charts */}
-        <div className="space-y-4">
-          <div className="bg-white border border-gray-200 p-4 rounded-lg">
-            <h2 className="text-lg font-bold text-green-800 mb-2">Market Opportunity</h2>
-            <div className="h-48">
+        {/* Center Column */}
+        <div className="space-y-3">
+          <div className="bg-white border border-gray-200 p-3 rounded-lg">
+            <h2 className="text-base font-bold text-green-900 mb-2">Market Opportunity</h2>
+            <div className="h-40">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie
                     data={marketData}
-                    innerRadius={50}
-                    outerRadius={70}
+                    innerRadius={40}
+                    outerRadius={60}
                     paddingAngle={5}
                     dataKey="value"
                   >
@@ -136,116 +139,120 @@ const FarmskyLandscapeDeck = () => {
                 </PieChart>
               </ResponsiveContainer>
             </div>
-            <div className="text-center text-sm font-bold text-green-800">
-              TAM: $100B
+            <div className="text-center text-sm font-bold text-green-900">
+              TAM: $2.5B | Initial Target: $75M
             </div>
           </div>
 
-          <div className="bg-white border border-gray-200 p-4 rounded-lg">
-            <h2 className="text-lg font-bold text-green-800 mb-2">Financial Projections</h2>
-            <div className="h-48">
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={financialData}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="name" />
-                  <YAxis />
-                  <Tooltip />
-                  <Line type="monotone" dataKey="revenue" stroke="#047857" name="Revenue ($M)" />
-                  <Line type="monotone" dataKey="costs" stroke="#DC2626" name="Costs ($M)" />
-                </LineChart>
-              </ResponsiveContainer>
+          <div className="bg-white border border-gray-200 p-3 rounded-lg">
+            <h2 className="text-base font-bold text-green-900 mb-2">Revenue Model</h2>
+            <div className="text-sm space-y-2">
+              <div className="flex justify-between items-center">
+                <span>Lending Spread:</span>
+                <span className="font-bold">9%</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span>Pre-offtake Fee:</span>
+                <span className="font-bold">8%</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span>Cycles per Year:</span>
+                <span className="font-bold">2</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span>Target NPL Rate:</span>
+                <span className="font-bold text-green-700">&lt;6%</span>
+              </div>
             </div>
           </div>
 
-          <div className="bg-green-50 p-4 rounded-lg">
-            <h2 className="text-lg font-bold text-green-800 mb-2">SDG Impact</h2>
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              <ul className="space-y-1">
-                <li className="flex items-start">
-                  <span className="text-green-700 mr-2">•</span>
-                  Sustainable agriculture
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-700 mr-2">•</span>
-                  Food security
-                </li>
-              </ul>
-              <ul className="space-y-1">
-                <li className="flex items-start">
-                  <span className="text-green-700 mr-2">•</span>
-                  Economic growth
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-700 mr-2">•</span>
-                  Rural development
-                </li>
-              </ul>
+          <div className="bg-green-50 p-3 rounded-lg">
+            <h2 className="text-base font-bold text-green-900 mb-2">Growth Targets</h2>
+            <div className="text-sm space-y-1">
+              <div className="flex items-start">
+                <span className="text-green-800 mr-2">•</span>
+                5,000 farm portfolios
+              </div>
+              <div className="flex items-start">
+                <span className="text-green-800 mr-2">•</span>
+                50,000 farmers impacted
+              </div>
+              <div className="flex items-start">
+                <span className="text-green-800 mr-2">•</span>
+                $500M+ financing facilitated
+              </div>
+              <div className="flex items-start">
+                <span className="text-green-800 mr-2">•</span>
+                10,000+ jobs created
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Right Column - Investment Case */}
-        <div className="space-y-4">
-          <div className="bg-green-50 p-4 rounded-lg">
-            <h2 className="text-lg font-bold text-green-800 mb-2">Investment Highlights</h2>
-            <ul className="text-sm space-y-2">
+        {/* Right Column */}
+        <div className="space-y-3">
+          <div className="bg-green-50 p-3 rounded-lg">
+            <h2 className="text-base font-bold text-green-900 mb-2">Investment Highlights</h2>
+            <ul className="text-sm space-y-1">
               <li className="flex items-start">
-                <span className="text-green-700 mr-2">•</span>
-                18% benchmark returns vs. 8-12% industry average
+                <span className="text-green-800 mr-2">•</span>
+                Clear market validation ($180B gap)
               </li>
               <li className="flex items-start">
-                <span className="text-green-700 mr-2">•</span>
-                Pre-vetted farms with >2 years track record
+                <span className="text-green-800 mr-2">•</span>
+                Strong early traction
               </li>
               <li className="flex items-start">
-                <span className="text-green-700 mr-2">•</span>
-                Proprietary risk assessment system
+                <span className="text-green-800 mr-2">•</span>
+                Experienced team
               </li>
               <li className="flex items-start">
-                <span className="text-green-700 mr-2">•</span>
-                Automated compliance & reporting
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-white border border-gray-200 p-4 rounded-lg">
-            <h2 className="text-lg font-bold text-green-800 mb-2">Competitive Advantages</h2>
-            <ul className="text-sm space-y-2">
-              <li className="flex items-start">
-                <span className="text-green-700 mr-2">•</span>
-                AI-powered risk assessment
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-700 mr-2">•</span>
-                Direct farmer relationships
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-700 mr-2">•</span>
-                Blockchain-backed transparency
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-700 mr-2">•</span>
-                Mobile-first platform
+                <span className="text-green-800 mr-2">•</span>
+                Two successful paid pilots
               </li>
             </ul>
           </div>
 
-          <div className="bg-green-800 p-4 rounded-lg text-white">
-            <h2 className="text-lg font-bold mb-2">Investment Opportunity</h2>
+          <div className="bg-white border border-gray-200 p-3 rounded-lg">
+            <h2 className="text-base font-bold text-green-900 mb-2">Key Services</h2>
+            <ul className="text-sm space-y-1">
+              <li className="flex items-start">
+                <span className="text-green-800 mr-2">•</span>
+                Onboarding and KYC
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-800 mr-2">•</span>
+                Risk profiling
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-800 mr-2">•</span>
+                Payment processing
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-800 mr-2">•</span>
+                Farm ERP system
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-green-900 p-3 rounded-lg text-white">
+            <h2 className="text-base font-bold mb-2">Funding Request</h2>
             <div className="space-y-2 text-sm">
-              <p className="font-bold">Raising $5M Series A</p>
-              <div className="grid grid-cols-2 gap-2 mt-2">
+              <p className="font-bold">Pre-Seed Round - $300K</p>
+              <div className="grid grid-cols-2 gap-2">
                 <div>
-                  <p className="font-bold">Use of Funds:</p>
+                  <p className="font-bold">Structure:</p>
                   <ul className="list-disc pl-4">
-                    <li>Platform expansion</li>
-                    <li>Market penetration</li>
+                    <li>$100K SAFE</li>
+                    <li>$200K Debt</li>
                   </ul>
                 </div>
                 <div>
-                  <p className="font-bold">Contact:</p>
-                  <p>invest@farmsky.com</p>
-                  <p>+1 (555) 123-4567</p>
+                  <p className="font-bold">Use of Funds:</p>
+                  <ul className="list-disc pl-4">
+                    <li>$200K Direct loans</li>
+                    <li>$100K Operations & Development</li>
+                  </ul>
                 </div>
               </div>
             </div>
